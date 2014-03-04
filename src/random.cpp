@@ -22,6 +22,11 @@ namespace yeti{
    std::uniform_real_distribution<> dist(0.0,1.0);
 
    // Create bound auto object for rng, get new numbers using grnd()
-   auto grnd = std::bind (dist,eng);
+   auto ygrnd = std::bind (dist,eng);
+
+   // externally visible function retruning uniform random number
+   double grnd(){
+      return ygrnd();
+   }
 
 }
