@@ -42,6 +42,8 @@ material_t get_material_properties(double x,double y,double z){ //determine pAZ 
 
          // update result with copy of object
          result.p = objects::object_list[i]->p;
+         result.Z = objects::object_list[i]->Z;
+         result.A = objects::object_list[i]->A;
 
          // update max order
          maxorder=objects::object_list[i]->order;
