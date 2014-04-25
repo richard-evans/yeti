@@ -17,11 +17,14 @@ GCC_LDFLAGS= -std=c++11 -lstdc++ -I./hdr -Wall
 # Objects
 OBJECTS= \
 obj/create.o \
+obj/detector.o \
 obj/initialise.o \
 obj/main.o \
 obj/material.o \
 obj/object.o \
+obj/propagate.o \
 obj/random.o \
+obj/rotation.o \
 obj/scatter.o \
 obj/simulate.o
 

@@ -42,7 +42,7 @@ int main(){
    yeti::initialise();
 
    // Simulate system
-   //yeti::simulate();
+   yeti::simulate();
 
    return 0;
 
