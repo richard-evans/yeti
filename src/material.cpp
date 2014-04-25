@@ -16,7 +16,16 @@
 #include "yeti.hpp"
 
 namespace yeti{
-   
+
+//-----------------------------------------------------------------------------
+// Constructor to set initial values
+//-----------------------------------------------------------------------------
+material_t::material_t() {  // Take material_t from class
+    p=0.0;
+    A=0.0;
+    Z=0.0;
+}
+
 //-----------------------------------------------------------------------------
 // Function to determine material properties as a function of position
 //-----------------------------------------------------------------------------
@@ -27,6 +36,8 @@ material_t get_material_properties(double x,double y,double z){ //determine pAZ 
 
    // define negative starting order
    int maxorder = -1;
+
+   // might be worth remembering last object here before performing long loop
 
    // loop over all objects in list
    for (unsigned int i=0; i<objects::object_list.size(); i++){
